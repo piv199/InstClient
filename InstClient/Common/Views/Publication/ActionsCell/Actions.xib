@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActionsCell" id="kkY-rf-m6u" customClass="ActionsCollectionViewCell" customModule="InstClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-wh-Zxf">
+                        <rect key="frame" x="15" y="14" width="24" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="nIT-rA-Gr6"/>
+                            <constraint firstAttribute="width" constant="24" id="pIT-WW-ZOm"/>
+                        </constraints>
+                        <state key="normal" image="likeIcon">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7b-Fv-lCX">
+                        <rect key="frame" x="25" y="49" width="326" height="1"/>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="VYK-Qa-N1p"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHV-Qz-Lwp">
+                        <rect key="frame" x="52" y="14" width="24" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="18g-ct-Rph"/>
+                            <constraint firstAttribute="width" constant="24" id="Kzk-Mf-1Mi"/>
+                        </constraints>
+                        <state key="normal" image="commentIcon">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="o7b-Fv-lCX" firstAttribute="leading" secondItem="kkY-rf-m6u" secondAttribute="leading" constant="25" id="1V3-1D-61P"/>
+                <constraint firstAttribute="bottom" secondItem="o7b-Fv-lCX" secondAttribute="bottom" id="5Ur-kd-dbR"/>
+                <constraint firstItem="8cb-wh-Zxf" firstAttribute="leading" secondItem="kkY-rf-m6u" secondAttribute="leading" constant="15" id="Gy6-mD-F8E"/>
+                <constraint firstItem="wHV-Qz-Lwp" firstAttribute="leading" secondItem="8cb-wh-Zxf" secondAttribute="trailing" constant="13" id="KVb-Iw-N2A"/>
+                <constraint firstItem="8cb-wh-Zxf" firstAttribute="top" secondItem="kkY-rf-m6u" secondAttribute="top" constant="14" id="Xij-1v-CM8"/>
+                <constraint firstAttribute="trailing" secondItem="o7b-Fv-lCX" secondAttribute="trailing" constant="24" id="cm8-Dc-wHL"/>
+                <constraint firstItem="wHV-Qz-Lwp" firstAttribute="top" secondItem="kkY-rf-m6u" secondAttribute="top" constant="14" id="gUP-RD-78D"/>
+                <constraint firstItem="o7b-Fv-lCX" firstAttribute="leading" secondItem="kkY-rf-m6u" secondAttribute="leading" constant="25" id="q6i-8C-HHq"/>
+            </constraints>
+            <connections>
+                <outlet property="likeButton" destination="8cb-wh-Zxf" id="ejL-5S-Yzs"/>
+            </connections>
+            <point key="canvasLocation" x="-123.5" y="-5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="commentIcon" width="23" height="21"/>
+        <image name="likeIcon" width="24" height="22"/>
+    </resources>
+</document>

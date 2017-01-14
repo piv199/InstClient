@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoViewCell" id="sig-9Z-96w" customClass="PhotoViewCollectionViewCell" customModule="InstClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5B-nD-oul">
+                        <rect key="frame" x="0.0" y="0.0" width="93" height="52"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" image="gridIcon"/>
+                        <state key="selected" image="gridIconSelected"/>
+                        <state key="highlighted" image="gridIconSelected"/>
+                        <connections>
+                            <action selector="gridState:" destination="sig-9Z-96w" eventType="touchUpInside" id="tN4-w8-bAI"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="cmS-vw-MeY">
+                        <rect key="frame" x="94" y="10" width="1" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="3zf-9U-HgM"/>
+                            <constraint firstAttribute="height" constant="33" id="Wcz-Vr-r6q"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCJ-AJ-5Rp">
+                        <rect key="frame" x="95" y="0.0" width="93" height="52"/>
+                        <state key="normal" image="listIcon"/>
+                        <state key="selected" image="listIconSelected"/>
+                        <state key="highlighted" image="listIconSelected"/>
+                        <connections>
+                            <action selector="listState:" destination="sig-9Z-96w" eventType="touchUpInside" id="uuH-hs-pb9"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="CMC-6M-EpN">
+                        <rect key="frame" x="189" y="10" width="1" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="dHw-zi-YJT"/>
+                            <constraint firstAttribute="height" constant="33" id="quB-nB-7lp"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pt4-Pi-zu5">
+                        <rect key="frame" x="188" y="0.0" width="93" height="52"/>
+                        <state key="normal" image="locationItem"/>
+                        <state key="selected" image="locationItemSelected"/>
+                        <state key="highlighted" image="locationItemSelected"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="G13-mN-8vJ">
+                        <rect key="frame" x="281" y="10" width="1" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="L2K-v1-rs9"/>
+                            <constraint firstAttribute="width" constant="1" id="bXW-2i-bhf"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdH-hX-6ud">
+                        <rect key="frame" x="282" y="0.0" width="93" height="52"/>
+                        <state key="normal" image="markItem"/>
+                        <state key="selected" image="markItemSelected"/>
+                        <state key="highlighted" image="markItemSelected"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pt4-Pi-zu5" firstAttribute="width" secondItem="d5B-nD-oul" secondAttribute="width" id="1Gm-Ge-r2f"/>
+                <constraint firstItem="CMC-6M-EpN" firstAttribute="leading" secondItem="xCJ-AJ-5Rp" secondAttribute="trailing" constant="1" id="3N5-10-BtI"/>
+                <constraint firstItem="hdH-hX-6ud" firstAttribute="leading" secondItem="G13-mN-8vJ" secondAttribute="trailing" id="70Y-oh-Z6A"/>
+                <constraint firstAttribute="bottom" secondItem="CMC-6M-EpN" secondAttribute="bottom" constant="9" id="B0g-5b-aNs"/>
+                <constraint firstAttribute="bottom" secondItem="d5B-nD-oul" secondAttribute="bottom" id="FP0-K5-eDa"/>
+                <constraint firstItem="cmS-vw-MeY" firstAttribute="leading" secondItem="d5B-nD-oul" secondAttribute="trailing" constant="1" id="G8T-RW-5fO"/>
+                <constraint firstAttribute="bottom" secondItem="xCJ-AJ-5Rp" secondAttribute="bottom" id="J9f-53-mnY"/>
+                <constraint firstAttribute="bottom" secondItem="hdH-hX-6ud" secondAttribute="bottom" id="Lmz-cf-30A"/>
+                <constraint firstItem="CMC-6M-EpN" firstAttribute="top" secondItem="sig-9Z-96w" secondAttribute="top" constant="10" id="Mse-q1-9ws"/>
+                <constraint firstItem="xCJ-AJ-5Rp" firstAttribute="width" secondItem="d5B-nD-oul" secondAttribute="width" id="NRe-Xw-AMD"/>
+                <constraint firstItem="xCJ-AJ-5Rp" firstAttribute="top" secondItem="sig-9Z-96w" secondAttribute="top" id="OSI-zu-xJD"/>
+                <constraint firstItem="d5B-nD-oul" firstAttribute="leading" secondItem="sig-9Z-96w" secondAttribute="leading" id="UIb-bF-IBq"/>
+                <constraint firstAttribute="bottom" secondItem="Pt4-Pi-zu5" secondAttribute="bottom" id="UOO-6o-deV"/>
+                <constraint firstItem="d5B-nD-oul" firstAttribute="top" secondItem="sig-9Z-96w" secondAttribute="top" id="VH1-tp-cQS"/>
+                <constraint firstItem="Pt4-Pi-zu5" firstAttribute="top" secondItem="sig-9Z-96w" secondAttribute="top" id="WTh-YU-2ia"/>
+                <constraint firstItem="cmS-vw-MeY" firstAttribute="top" secondItem="sig-9Z-96w" secondAttribute="top" constant="10" id="Wlv-ce-s3q"/>
+                <constraint firstItem="hdH-hX-6ud" firstAttribute="width" secondItem="d5B-nD-oul" secondAttribute="width" id="ahg-Cb-yjC"/>
+                <constraint firstItem="hdH-hX-6ud" firstAttribute="top" secondItem="sig-9Z-96w" secondAttribute="top" id="d30-Xg-Rnm"/>
+                <constraint firstAttribute="trailing" secondItem="hdH-hX-6ud" secondAttribute="trailing" id="fM6-Dq-1h8"/>
+                <constraint firstAttribute="bottom" secondItem="cmS-vw-MeY" secondAttribute="bottom" constant="9" id="gMB-m8-D1J"/>
+                <constraint firstItem="Pt4-Pi-zu5" firstAttribute="leading" secondItem="CMC-6M-EpN" secondAttribute="trailing" constant="-2" id="heT-l8-ta8"/>
+                <constraint firstItem="G13-mN-8vJ" firstAttribute="top" secondItem="sig-9Z-96w" secondAttribute="top" constant="10" id="kkY-CX-iav"/>
+                <constraint firstAttribute="bottom" secondItem="G13-mN-8vJ" secondAttribute="bottom" constant="9" id="pIE-tt-3dz"/>
+                <constraint firstItem="xCJ-AJ-5Rp" firstAttribute="leading" secondItem="cmS-vw-MeY" secondAttribute="trailing" id="rUm-3j-MOU"/>
+                <constraint firstItem="G13-mN-8vJ" firstAttribute="leading" secondItem="Pt4-Pi-zu5" secondAttribute="trailing" id="rX4-rk-iks"/>
+            </constraints>
+            <size key="customSize" width="285" height="50"/>
+            <connections>
+                <outlet property="gridButton" destination="d5B-nD-oul" id="JDR-FQ-xqt"/>
+                <outlet property="listButton" destination="xCJ-AJ-5Rp" id="bZF-Dv-Djs"/>
+                <outlet property="locationButton" destination="Pt4-Pi-zu5" id="QeT-1k-xLi"/>
+                <outlet property="markButton" destination="hdH-hX-6ud" id="dRU-Su-Cl2"/>
+            </connections>
+            <point key="canvasLocation" x="-60" y="-196"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gridIcon" width="25" height="25"/>
+        <image name="gridIconSelected" width="25" height="25"/>
+        <image name="line" width="1" height="66"/>
+        <image name="listIcon" width="28" height="23"/>
+        <image name="listIconSelected" width="28" height="23"/>
+        <image name="locationItem" width="24" height="30"/>
+        <image name="locationItemSelected" width="24" height="30"/>
+        <image name="markItem" width="28" height="29"/>
+        <image name="markItemSelected" width="28" height="29"/>
+    </resources>
+</document>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BioCell" id="Wby-3a-WEh" customClass="BioCollectionViewCell" customModule="InstClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DRA-NP-k2G">
+                        <rect key="frame" x="13" y="15" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="DRA-NP-k2G" secondAttribute="height" multiplier="1:1" id="IAd-0d-752"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-o8-GGe">
+                        <rect key="frame" x="286" y="18" width="61" height="42"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="UB3-8y-6QB"/>
+                            <constraint firstAttribute="width" constant="61" id="XkP-bz-U0a"/>
+                        </constraints>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="following">
+                                    <attributes>
+                                        <color key="NSColor" red="0.5450980392" green="0.5568627451" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="15" name=".SFNSText"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0t-CF-Bbb">
+                        <rect key="frame" x="210" y="18" width="61" height="42"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="8ur-4I-Q5i"/>
+                            <constraint firstAttribute="height" constant="42" id="cMa-pV-uWx"/>
+                        </constraints>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="followers">
+                                    <attributes>
+                                        <color key="NSColor" red="0.5450980392" green="0.5568627451" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="15" name=".SFNSText"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                        <connections>
+                            <action selector="getFollowers:" destination="Wby-3a-WEh" eventType="touchUpInside" id="27N-Vw-1l8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk2-We-tls">
+                        <rect key="frame" x="129" y="69" width="229" height="30"/>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="W7P-GV-2zL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Edit Profile">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Steve Jones" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqa-ig-joe">
+                        <rect key="frame" x="15" y="119" width="79" height="17"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="7sr-cH-PoX"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Et7-i7-S9a"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlj-tR-h9a">
+                        <rect key="frame" x="15" y="142" width="20.5" height="17"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="GTV-Vu-uwc"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="eYy-7s-jeZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="website" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJd-Lg-s2m">
+                        <rect key="frame" x="15" y="165" width="50" height="17"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="Iwl-Be-fjE"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="aWv-sh-uKK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.33725490200000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSF-Ot-co7">
+                        <rect key="frame" x="136" y="18" width="61" height="42"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="96d-eu-Yhg"/>
+                            <constraint firstAttribute="width" constant="61" id="9RJ-KY-hnU"/>
+                        </constraints>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="posts">
+                                    <attributes>
+                                        <color key="NSColor" red="0.5450980392" green="0.5568627451" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="15" name="Helvetica"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fxb-o8-GGe" firstAttribute="top" secondItem="Wby-3a-WEh" secondAttribute="top" constant="18" id="1qe-0k-hva"/>
+                <constraint firstItem="p0t-CF-Bbb" firstAttribute="leading" secondItem="XSF-Ot-co7" secondAttribute="trailing" constant="13" id="AwF-DN-63u"/>
+                <constraint firstItem="tlj-tR-h9a" firstAttribute="leading" secondItem="Wby-3a-WEh" secondAttribute="leading" constant="15" id="Bdk-hu-qTj"/>
+                <constraint firstItem="fk2-We-tls" firstAttribute="leading" secondItem="DRA-NP-k2G" secondAttribute="trailing" constant="26" id="DyU-1C-t4a"/>
+                <constraint firstItem="DRA-NP-k2G" firstAttribute="top" secondItem="Wby-3a-WEh" secondAttribute="top" constant="15" id="HHW-bd-mgg"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tlj-tR-h9a" secondAttribute="trailing" constant="15" id="JG8-9s-7HX"/>
+                <constraint firstItem="fxb-o8-GGe" firstAttribute="leading" secondItem="p0t-CF-Bbb" secondAttribute="trailing" constant="15" id="MTb-wf-MBl"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iqa-ig-joe" secondAttribute="trailing" constant="15" id="RmC-8c-vSr"/>
+                <constraint firstItem="OJd-Lg-s2m" firstAttribute="top" secondItem="tlj-tR-h9a" secondAttribute="bottom" constant="6" id="Tp2-Qx-BPa"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OJd-Lg-s2m" secondAttribute="trailing" constant="15" id="XGe-1R-RJN"/>
+                <constraint firstItem="OJd-Lg-s2m" firstAttribute="leading" secondItem="Wby-3a-WEh" secondAttribute="leading" constant="15" id="Z4w-Ur-tVJ"/>
+                <constraint firstItem="iqa-ig-joe" firstAttribute="leading" secondItem="Wby-3a-WEh" secondAttribute="leading" constant="15" id="axn-sH-hwL"/>
+                <constraint firstItem="iqa-ig-joe" firstAttribute="top" secondItem="DRA-NP-k2G" secondAttribute="bottom" constant="14" id="cNf-9q-pWw"/>
+                <constraint firstItem="XSF-Ot-co7" firstAttribute="leading" secondItem="DRA-NP-k2G" secondAttribute="trailing" constant="33" id="dCK-wP-EJA"/>
+                <constraint firstItem="tlj-tR-h9a" firstAttribute="top" secondItem="iqa-ig-joe" secondAttribute="bottom" constant="6" id="fma-i1-K2m"/>
+                <constraint firstItem="p0t-CF-Bbb" firstAttribute="top" secondItem="Wby-3a-WEh" secondAttribute="top" constant="18" id="hrk-Lz-vGM"/>
+                <constraint firstItem="fk2-We-tls" firstAttribute="top" secondItem="p0t-CF-Bbb" secondAttribute="bottom" constant="9" id="ixl-KA-fR7"/>
+                <constraint firstAttribute="trailing" secondItem="fxb-o8-GGe" secondAttribute="trailing" constant="28" id="jwo-ov-Jh8"/>
+                <constraint firstAttribute="bottom" secondItem="OJd-Lg-s2m" secondAttribute="bottom" constant="16" id="rhz-qE-H0H"/>
+                <constraint firstItem="DRA-NP-k2G" firstAttribute="leading" secondItem="Wby-3a-WEh" secondAttribute="leading" constant="13" id="tGc-kQ-BdK"/>
+                <constraint firstItem="XSF-Ot-co7" firstAttribute="top" secondItem="Wby-3a-WEh" secondAttribute="top" constant="18" id="u6h-Qf-dPD"/>
+                <constraint firstAttribute="trailing" secondItem="fk2-We-tls" secondAttribute="trailing" constant="17" id="vhb-do-Cft"/>
+            </constraints>
+            <size key="customSize" width="441" height="198"/>
+            <connections>
+                <outlet property="avatarImage" destination="DRA-NP-k2G" id="z3V-cI-y28"/>
+                <outlet property="bioLabel" destination="tlj-tR-h9a" id="Oid-gg-tUc"/>
+                <outlet property="editProfileButton" destination="fk2-We-tls" id="wMb-Dq-Unh"/>
+                <outlet property="followersButton" destination="p0t-CF-Bbb" id="RV8-qN-vRy"/>
+                <outlet property="followingButton" destination="fxb-o8-GGe" id="Ehh-87-6Kl"/>
+                <outlet property="fullNameLabel" destination="iqa-ig-joe" id="NCl-gR-Zba"/>
+                <outlet property="postsButton" destination="XSF-Ot-co7" id="ghM-mh-U67"/>
+                <outlet property="websiteLabel" destination="OJd-Lg-s2m" id="MZv-vT-o5D"/>
+            </connections>
+            <point key="canvasLocation" x="190.5" y="54"/>
+        </collectionViewCell>
+    </objects>
+</document>
